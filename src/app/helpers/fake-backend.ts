@@ -5,6 +5,7 @@ export function fakeBackendFactory(
   backend: MockBackend,
   options: BaseRequestOptions) {
 
+  // tslint:disable-next-line:max-line-length
   const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1vc2ggSGFtZWRhbmkiLCJhZG1pbiI6dHJ1ZX0.iy8az1ZDe-_hS8GLDKsQKgPHvWpHl0zkQBqy1QIPOkA';
 
   backend.connections.subscribe((connection: MockConnection) => {
